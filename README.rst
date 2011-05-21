@@ -23,7 +23,7 @@ configuration options.
 * turn on color output
 * pack with as many thread as there are CPU cores
 * don't limit the number of renames tracked
-* use my global excludes file
+* use my global excludes file (see *.gitignore* below)
 * setup some handy aliases:
 
   * st = status
@@ -36,3 +36,13 @@ configuration options.
 
 .. _opendiff: http://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man1/opendiff.1.html
 
+.gitignore
+----------
+
+This file tells git what to ignore at a global level.
+
+Currently this file ignores:
+
+* *.DS_Store* - a file that Mac OS X Finder creates for tracking metadata
+* *.swp* - swap files that Vim creates (although this feature is turned
+    off in my vim)
