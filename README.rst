@@ -45,4 +45,4 @@ Currently this file ignores:
 
 * *.DS_Store* - a file that Mac OS X Finder creates for tracking metadata
 * *.swp* - swap files that Vim creates (although this feature is turned
-    off in my vim)
+  off in my vim)
