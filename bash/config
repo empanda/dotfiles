@@ -1,0 +1,4 @@
+
+# setup my prompt
+# user@example.com:~/path/to/pwd >
+PS1="\n\[$WHITE\]\u@\[$NO_COLOR\]\[$EWHITE\]\H\[$NO_COLOR\]:\[$CYAN\]\w\n\[$EBLUE\]⤷ \[$NO_COLOR\] "
