@@ -22,6 +22,7 @@ EBLUE='\e[1;34m'
 EMAGENTA='\e[1;35m'
 ECYAN='\e[1;36m'
 EWHITE='\e[1;37m'
+
 # underlined colors
 UBLACK='\e[4;30m'
 URED='\e[4;31m'
