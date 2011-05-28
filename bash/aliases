@@ -1,0 +1,10 @@
+# the aliases for vim are set the in env file
+
+# Shell Helpers
+alias r="reset"
+
+# Git Helper
+
+# Django Helpers
+
+# Homebrew Helper
