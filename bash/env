@@ -1,0 +1,46 @@
+# add /usr/local/bin to path
+if [ -d "/usr/local/bin" ] ; then
+    PATH="/usr/local/bin:$PATH"
+fi
+
+# add /usr/local/sbin to path
+if [ -d "/usr/local/sbin" ] ; then
+    PATH="/usr/local/sbin:$PATH"
+fi
+
+# add ~/bin to path
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+
+export PATH
+
+# use the correct and avaible version of vim
+
+# check for vi
+
+vi --version &> /dev/null
+if [ $? -eq 0 ]; then
+    alias v="vi"
+    EDITOR="vi"
+    vim --version &> /dev/null
+
+    if [ $? -eq 0 ]; then
+        alias vi="vim"
+        EDITOR="vim"
+
+        gvim --version &> /dev/null
+        if [ $? -eq 0 ]; then
+            alias vim="gvim"
+            EDITOR="gvim"
+        fi
+        
+        mvim --version &> /dev/null
+        if [ $? -eq 0 ]; then
+            alias vim="mvim"
+            EDITOR="mvim"
+        fi
+    fi
+fi
+
+export EDITOR
