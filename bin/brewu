@@ -1,0 +1,9 @@
+#!/bin/bash
+
+brew update
+echo "Oudated:"
+brew outdated
+read -p "Install these outdated packages? [y/N] " install
+if [ "$install" == "y" ]; then
+    brewi `brew outdated`
+fi

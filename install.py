@@ -24,14 +24,22 @@ def update():
 
 def install_bash():
     log.info('installing bash dotfiles')
-    backup_file('bash_profile')
     backup_file('profile')
+    install_file('bash_profile')
     install_file('bashrc')
 
 def install_git():
     log.info('installing git dotfiles')
     install_file('gitconfig')
     install_file('gitignore')
+
+def install_bin():
+    log.info('installing ~/bin directory')
+    homebin = os.path.expanduser('~/bin')
+    dotbin = os.path.expanduser('~/.dotfiles/bin')
+    backup_dotfile(homebin)
+    if not os.path.islink(homebin):
+        run('ln -svf %s %s' % (dotbin, homebin))
 
 def install_file(filename):
     log.info('installing the %s file', filename)
@@ -41,7 +49,7 @@ def install_file(filename):
     run('ln -svf %s %s' % (filepath, dotfile))
 
 def backup_dotfile(dotfile):
-    if os.path.isfile(dotfile) and not os.path.islink(dotfile):
+    if os.path.exists(dotfile) and not os.path.islink(dotfile):
         log.info('backing up the %s file', dotfile)
         run('mv -vf %s %s.old' % (dotfile, dotfile))
 
@@ -54,6 +62,7 @@ def main():
     update()
     install_bash()
     install_git()
+    install_bin()
 
 if __name__ == '__main__':
     main()

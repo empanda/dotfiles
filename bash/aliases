@@ -1,10 +1,21 @@
-# the aliases for vim are set the in env file
-
 # Shell Helpers
+# the aliases for vim are set the in env file
 alias r="reset"
+alias refresh=". ~/.bashrc"
 
 # Git Helper
+alias gs="git status"
+alias ga="git add"
 
 # Django Helpers
+alias mr="./manage.py runserver"
+alias mt="./manage.py test"
+alias fdl="fab deploy_local"
 
 # Homebrew Helper
+# see also the brewu command in ~/bin
+alias brewi="brew install -v"
+
+# Apt helpers
+alias aptu="sudo apt-get update && sudo apt-get upgrade"
+alias aptdu="sudo apt-get update && sudo apt-get dist-upgrade"
