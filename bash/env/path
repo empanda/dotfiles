@@ -1,0 +1,12 @@
+# PATH Management
+
+# add /usr/local/bin to path
+test -d "/usr/local/bin" && PATH="/usr/local/bin:$PATH"
+
+# add /usr/local/sbin to path
+test -d "/usr/local/sbin" && PATH="/usr/local/sbin:$PATH"
+
+# add ~/bin to path
+test -d "$HOME/bin" && PATH="$HOME/bin:$PATH"
+
+export PATH

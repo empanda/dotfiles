@@ -1,0 +1,3 @@
+. ~/.dotfiles/env/path
+. ~/.dotfiles/env/shell
+. ~/.dotfiles/env/editor

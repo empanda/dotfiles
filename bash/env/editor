@@ -1,20 +1,3 @@
-# add /usr/local/bin to path
-if [ -d "/usr/local/bin" ] ; then
-    PATH="/usr/local/bin:$PATH"
-fi
-
-# add /usr/local/sbin to path
-if [ -d "/usr/local/sbin" ] ; then
-    PATH="/usr/local/sbin:$PATH"
-fi
-
-# add ~/bin to path
-if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$PATH"
-fi
-
-export PATH
-
 # use the correct and avaible version of vim
 
 vi --version &> /dev/null
