@@ -1,26 +1,23 @@
-# use the correct and avaible version of vim
+# EDITOR Configuration
 
-vi --version &> /dev/null
-if [ $? -eq 0 ]; then
-    alias v="vi"
-    EDITOR="vi"
-    vim --version &> /dev/null
+# use the best version of vi that is available
+# vi < vim < gvim < mvim
 
-    if [ $? -eq 0 ]; then
-        alias vi="vim"
-        EDITOR="vim"
+alias v="vi"
+EDITOR="vi"
 
-        gvim --version &> /dev/null
-        if [ $? -eq 0 ]; then
-            alias vim="gvim"
-            EDITOR="gvim"
-        fi
-        
-        mvim --version &> /dev/null
-        if [ $? -eq 0 ]; then
-            alias vim="mvim"
-            EDITOR="mvim"
-        fi
+if test -n "$(command -v vim)" ; then
+    alias vi="vim"
+    EDITOR="vim"
+
+    if test -n "$(command -v gvim)" ; then
+        alias vim="gvim"
+        EDITOR="gvim"
+    fi
+    
+    if test -n "$(command -v mvim)" ; then
+        alias vim="mvim"
+        EDITOR="mvim"
     fi
 fi
 
