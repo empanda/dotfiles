@@ -9,9 +9,6 @@ shopt -s extglob &> /dev/null
 # append to the HISTFILE instead of overwriting it (this is usually the default)
 shopt -s histappend &> /dev/null
 
-# do hostname completion
-shopt -s hostcomplete &> /dev/null
-
 # allow comments on the command line (this is usually the default)
 shopt -s interactive_comments &> /dev/null
 
