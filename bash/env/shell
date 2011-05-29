@@ -1,0 +1,28 @@
+# Shell options
+
+# notify of bg job completion immediately
+set -o notify
+
+# enable extra pattern matching with globs
+shopt -s extglob &> /dev/null
+
+# append to the HISTFILE instead of overwriting it (this is usually the default)
+shopt -s histappend &> /dev/null
+
+# do hostname completion
+shopt -s hostcomplete &> /dev/null
+
+# allow comments on the command line (this is usually the default)
+shopt -s interactive_comments &> /dev/null
+
+# don't tell me when mail was read on the command line
+shopt -u mailwarn &> /dev/null
+
+# don't try and complete empty lines it's not useful 
+shopt -s no_empty_cmd_completion &> /dev/null
+
+# turn off the "you have mail" at the command line
+unset MAILCHECK
+
+# disable core dumps
+ulimit -S -c 0
