@@ -1,3 +1,116 @@
 [submodule "vim/bundle/pathogen"]
 	path = vim/bundle/pathogen
 	url = git://github.com/tpope/vim-pathogen.git
+	ignore = untracked
+[submodule "vim/bundle/surround"]
+	path = vim/bundle/surround
+	url = git://github.com/tpope/vim-surround.git
+	ignore = untracked
+[submodule "vim/bundle/repeat"]
+	path = vim/bundle/repeat
+	url = git://github.com/tpope/vim-repeat.git
+	ignore = untracked
+[submodule "vim/bundle/supertab"]
+	path = vim/bundle/supertab
+	url = git://github.com/ervandew/supertab.git
+	ignore = untracked
+[submodule "vim/bundle/ack"]
+	path = vim/bundle/ack
+	url = git://github.com/mileszs/ack.vim.git
+	ignore = untracked
+[submodule "vim/bundle/delimitMate"]
+	path = vim/bundle/delimitMate
+	url = git://github.com/Raimondi/delimitMate.git
+	ignore = untracked
+[submodule "vim/bundle/bufexplorer"]
+	path = vim/bundle/bufexplorer
+	url = git://github.com/vim-scripts/bufexplorer.zip.git
+	ignore = untracked
+[submodule "vim/bundle/matchit"]
+	path = vim/bundle/matchit
+	url = git://github.com/vim-scripts/matchit.zip.git
+	ignore = untracked
+[submodule "vim/bundle/indentpython"]
+	path = vim/bundle/indentpython
+	url = git://github.com/vim-scripts/indentpython.vim.git
+	ignore = untracked
+[submodule "vim/bundle/xmledit"]
+	path = vim/bundle/xmledit
+	url = git://github.com/sukima/xmledit.git
+	ignore = untracked
+[submodule "vim/bundle/nginx"]
+	path = vim/bundle/nginx
+	url = git://github.com/vim-scripts/nginx.vim.git
+	ignore = untracked
+[submodule "vim/bundle/color-sampler-pack"]
+	path = vim/bundle/color-sampler-pack
+	url = git://github.com/vim-scripts/Color-Sampler-Pack.git
+	ignore = untracked
+[submodule "vim/bundle/jinja"]
+	path = vim/bundle/jinja
+	url = git://github.com/vim-scripts/Jinja.git
+	ignore = untracked
+[submodule "vim/bundle/vydark"]
+	path = vim/bundle/vydark
+	url = git://github.com/vim-scripts/vydark.git
+	ignore = untracked
+[submodule "vim/bundle/xoria256"]
+	path = vim/bundle/xoria256
+	url = git://github.com/vim-scripts/xoria256.vim.git
+	ignore = untracked
+[submodule "vim/bundle/liquid-carbon"]
+	path = vim/bundle/liquid-carbon
+	url = git://github.com/vim-scripts/Liquid-Carbon.git
+	ignore = untracked
+[submodule "vim/bundle/nerdcommenter"]
+	path = vim/bundle/nerdcommenter
+	url = git://github.com/scrooloose/nerdcommenter.git
+	ignore = untracked
+[submodule "vim/bundle/zoomwin"]
+	path = vim/bundle/zoomwin
+	url = git://github.com/vim-scripts/ZoomWin.git
+	ignore = untracked
+[submodule "vim/bundle/blackboard"]
+	path = vim/bundle/blackboard
+	url = git://github.com/nelstrom/vim-blackboard.git
+	ignore = untracked
+[submodule "vim/bundle/vividchalk"]
+	path = vim/bundle/vividchalk
+	url = git://github.com/tpope/vim-vividchalk.git
+	ignore = untracked
+[submodule "vim/bundle/unimpaired"]
+	path = vim/bundle/unimpaired
+	url = git://github.com/tpope/vim-unimpaired.git
+	ignore = untracked
+[submodule "vim/bundle/jellybeans"]
+	path = vim/bundle/jellybeans
+	url = git://github.com/nanotech/jellybeans.vim.git
+	ignore = untracked
+[submodule "vim/bundle/molokai"]
+	path = vim/bundle/molokai
+	url = git://github.com/vim-scripts/molokai.git
+	ignore = untracked
+[submodule "vim/bundle/snipmate"]
+	path = vim/bundle/snipmate
+	url = git://github.com/msanders/snipmate.vim.git
+	ignore = untracked
+[submodule "vim/bundle/snipmate-for-django"]
+	path = vim/bundle/snipmate-for-django
+	url = git://github.com/robhudson/snipmate_for_django.git
+	ignore = untracked
+[submodule "vim/bundle/python-extras"]
+	path = vim/bundle/python-extras
+	url = git://github.com/empanda/python-extras-vim.git
+	ignore = untracked
+[submodule "vim/bundle/python"]
+	path = vim/bundle/python
+	url = git://github.com/vim-scripts/python.vim.git
+	ignore = untracked
+[submodule "vim/bundle/django"]
+	path = vim/bundle/django
+	url = git://github.com/vim-scripts/django.vim.git
+	ignore = untracked
+[submodule "vim/bundle/nerdtree"]
+	path = vim/bundle/nerdtree
+	url = git://github.com/scrooloose/nerdtree.git
+	ignore = untracked
