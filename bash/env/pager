@@ -17,6 +17,7 @@
 
 
 if test -n "$(command -v less)" ; then
+    alias more="less"
     alias less="less -FirwX"
     PAGER="less -FirwX"
     MANPAGER="less -FiRswX"
