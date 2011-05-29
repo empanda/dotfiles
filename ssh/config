@@ -28,7 +28,7 @@ Host tekoa
     User johannh
 
 Host yacolt
-    HostName tekoa.webcollective.coop
+    HostName yacolt.webcollective.coop
     User johannh
 
 Host wapato
@@ -45,7 +45,7 @@ Host zillah
 
 Host twisp
     HostName twisp.webcollective.coop
-    User johannh
+    User johann
 
 Host ci
     HostName ci.webcollective.coop
