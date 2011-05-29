@@ -45,6 +45,11 @@ def install_ssh():
     log.info('installing ~/.ssh/config')
     install_file('ssh/config')
 
+def install_vim():
+    log.info('installing vim dotfiles')
+    install_file('vimrc')
+    install_file('vim')
+
 def install_file(filename):
     log.info('installing the %s file', filename)
     filepath = os.path.expanduser('~/.dotfiles/%s' % filename)
