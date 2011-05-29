@@ -1,4 +1,4 @@
-# Shell options
+# Shell Options
 
 # notify of bg job completion immediately
 set -o notify
@@ -26,3 +26,12 @@ unset MAILCHECK
 
 # disable core dumps
 ulimit -S -c 0
+
+
+# History Options
+
+# Ignore duplicate history entires
+# Also ignore any command preceded by a space
+HISTCONTROL=ignoreboth
+HISTFILESIZE=10000
+HISTSIZE=10000
