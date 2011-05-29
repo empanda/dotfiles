@@ -2,8 +2,9 @@
 # the aliases for vim are set the in env file
 alias r="reset"
 alias reload=". ~/.bashrc"
+alias re="reload"
 
-# Git Helper
+# Git Helpers
 alias gs="git status"
 alias ga="git add"
 alias gd="git diff"
@@ -12,6 +13,15 @@ alias gl="git pull"
 alias gf="git fetch"
 function gc { git commit -m "$*"; }
 function gca { git commit -a -m "$*"; }
+
+# Svn Helpers
+alias ss="svn status"
+alias su="svn update"
+alias ssu="svn status -u"
+alias sa="svn add"
+alias sd="svn diff"
+function sc { svn commit -m "$*"; }
+
 
 # Django Helpers
 alias mr="./manage.py runserver"
