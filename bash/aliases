@@ -1,8 +1,11 @@
 # Shell Helpers
-# the aliases for vim are set the in env file
 alias r="reset"
 alias reload=". ~/.bashrc"
 alias re="reload"
+
+# ls Helpers
+alias ls="ls -G"
+alias ll="ls -lahG"
 
 # Git Helpers
 alias gs="git status"
@@ -46,3 +49,6 @@ alias aptdu="sudo apt-get update && sudo apt-get dist-upgrade"
 
 # Misc Helpers
 alias http="echo 'WARNING: This server is subject to directory traversal with /.. paths.' && python -m SimpleHTTPServer"
+
+# the aliases for vim are set in bash/env/editor
+# the less alias is in bash/env/pager
