@@ -34,11 +34,15 @@ alias virtualenv="virtualenv --no-site-packages --distribute"
 alias sba="source bin/activate"
 alias pi="pip install -v"
 alias pir="pip install -v -r"
+alias rmpyc="find . -name '*.pyc' -exec rm -v '{}' ';'"
 
-# Homebrew Helper
+# Homebrew Helpers
 # see also the brewu command in ~/bin
 alias brewi="brew install -v"
 
-# Apt helpers
+# Apt Helpers
 alias aptu="sudo apt-get update && sudo apt-get upgrade"
 alias aptdu="sudo apt-get update && sudo apt-get dist-upgrade"
+
+# Misc Helpers
+alias http="echo 'WARNING: This server is subject to directory traversal with /.. paths.' && python -m SimpleHTTPServer"
