@@ -4,8 +4,8 @@ alias reload=". ~/.bashrc"
 alias re="reload"
 
 # ls Helpers
-alias ls="ls -G"
-alias ll="ls -lahG"
+alias ls="ls --color=always"
+alias ll="ls -lAh --color=always"
 
 # Git Helpers
 alias gs="git status"

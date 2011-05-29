@@ -7,3 +7,7 @@ export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.4.2.2/jars"
 
 # enable bash completion file (from homebrew)
 . /usr/local/etc/bash_completion
+
+# local modifications to the ls aliases
+alias ls="ls -G"
+alias ll="ls -lahG"
