@@ -1,11 +1,17 @@
 # Shell Helpers
 # the aliases for vim are set the in env file
 alias r="reset"
-alias refresh=". ~/.bashrc"
+alias reload=". ~/.bashrc"
 
 # Git Helper
 alias gs="git status"
 alias ga="git add"
+alias gd="git diff"
+alias gp="git push"
+alias gl="git pull"
+alias gf="git fetch"
+function gc { git commit -m "$*"; }
+function gca { git commit -a -m "$*"; }
 
 # Django Helpers
 alias mr="./manage.py runserver"
