@@ -1,0 +1,27 @@
+# Pager Configuration
+
+# PAGER
+# -F = Automatically exit if the entire file can be displayed on the first screen.
+# -i = Causes searches to ignore case.
+# -r = Causes "raw" control characters to be displayed.
+# -w = Temporarily highlights the first "new" line after a forward movement of a full page.
+# -X = Disables sending the termcap initialization and deinitialization strings to the terminal.
+
+# MANPAGER
+# -F = Automatically exit if the entire file can be displayed on the first screen.
+# -i = Causes searches to ignore case.
+# -R = Like -r, but only ANSI "color" escape sequences are output in "raw" form.
+# -s = Causes consecutive blank lines to be squeezed into a single blank line.
+# -w = Temporarily highlights the first "new" line after a forward movement of a full page.
+# -X = Disables sending the termcap initialization and deinitialization strings to the terminal.
+
+
+if test -n "$(command -v less)" ; then
+    alias less="less -FirwX"
+    PAGER="less -FirwX"
+    MANPAGER="less -FiRswX"
+else
+    PAGER="more"
+    MANPAGER="$PAGER"
+fi
+export PAGER MANPAGER

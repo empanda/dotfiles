@@ -1,3 +1,4 @@
-. ~/.dotfiles/bash/env/path
 . ~/.dotfiles/bash/env/shell
+. ~/.dotfiles/bash/env/path
 . ~/.dotfiles/bash/env/editor
+. ~/.dotfiles/bash/env/pager
