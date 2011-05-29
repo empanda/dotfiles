@@ -22,11 +22,18 @@ alias sa="svn add"
 alias sd="svn diff"
 function sc { svn commit -m "$*"; }
 
-
 # Django Helpers
 alias mr="./manage.py runserver"
 alias mt="./manage.py test"
 alias fdl="fab deploy_local"
+
+# Python Helpers
+alias py="python"
+alias ipy="ipython"
+alias virtualenv="virtualenv --no-site-packages --distribute"
+alias sba="source bin/activate"
+alias pi="pip install -v"
+alias pir="pip install -v -r"
 
 # Homebrew Helper
 # see also the brewu command in ~/bin
