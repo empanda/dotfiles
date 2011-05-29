@@ -114,3 +114,11 @@
 	path = vim/bundle/nerdtree
 	url = git://github.com/scrooloose/nerdtree.git
 	ignore = untracked
+[submodule "vim/bundle/javascript"]
+	path = vim/bundle/javascript
+	url = git://github.com/pangloss/vim-javascript.git
+	ignore = untracked
+[submodule "vim/bundle/nagios"]
+	path = vim/bundle/nagios
+	url = git://github.com/vim-scripts/nagios-syntax.git
+	ignore = untracked
