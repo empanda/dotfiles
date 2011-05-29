@@ -41,6 +41,10 @@ def install_bin():
     if not os.path.islink(homebin):
         run('ln -svf %s %s' % (dotbin, homebin))
 
+def install_ssh():
+    log.info('installing ~/.ssh/config')
+    install_file('ssh/config')
+
 def install_file(filename):
     log.info('installing the %s file', filename)
     filepath = os.path.expanduser('~/.dotfiles/%s' % filename)
@@ -57,12 +61,12 @@ def backup_file(filename):
     dotfile = os.path.expanduser('~/.%s' % filename)
     backup_dotfile(dotfile)
 
-
 def main():
     update()
     install_bash()
     install_git()
     install_bin()
+    install_ssh()
 
 if __name__ == '__main__':
     main()

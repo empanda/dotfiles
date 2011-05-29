@@ -1,0 +1,69 @@
+# SSH Configuration
+
+# Compression for faster connections
+Compression yes
+CompressionLevel 9
+
+
+# Host Configurations
+
+# Personal
+
+Host orion
+    HostName orion.phyfus.com
+    User johann
+
+Host blackbeard
+    HostName blackbeard.l
+    User root
+
+Host tcmseattle
+    HostName membership.thechildrensmuseum.org
+    User tcmseattle
+
+# Web Collective
+
+Host tekoa
+    HostName tekoa.webcollective.coop
+    User johannh
+
+Host yacolt
+    HostName tekoa.webcollective.coop
+    User johannh
+
+Host wapato
+    HostName wapato.webcollective.coop
+    User johannh
+
+Host moxee
+    HostName moxee.webcollective.coop
+    User johannh
+
+Host zillah
+    HostName zillah.webcollective.coop
+    User johannh
+
+Host twisp
+    HostName twisp.webcollective.coop
+    User johannh
+
+Host ci
+    HostName ci.webcollective.coop
+    User johann
+
+Host bandar
+    HostName bandar.dreamhost.com
+    User ragingweb
+
+Host acr
+    HostName acr.webcollective.coop
+    User johann
+
+Host balle
+    HostName balle.webcollective.coop
+    User johann
+
+Host greentools
+    HostName greentools.webfactional.com
+    User greentools
+
