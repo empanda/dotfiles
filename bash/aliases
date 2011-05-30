@@ -51,5 +51,8 @@ alias aptdu="sudo apt-get update && sudo apt-get dist-upgrade"
 alias http="echo 'WARNING: This server is subject to directory traversal with /.. paths.' && python -m SimpleHTTPServer"
 alias install_useful_software="sudo apt-get update && sudo apt-get install ack-grep build-essential curl git-core python subversion vim-nox wget"
 
+# Curl Helpers
+alias ch="curl -I"
+
 # the aliases for vim are set in bash/env/editor
 # the less alias is in bash/env/pager
