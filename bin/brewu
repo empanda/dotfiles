@@ -5,5 +5,5 @@ echo "Oudated:"
 brew outdated
 read -p "Install these outdated packages? [y/N] " install
 if [ "$install" == "y" ]; then
-    brewi `brew outdated`
+    brew install -v `brew outdated`
 fi
