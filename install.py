@@ -72,6 +72,7 @@ def main():
     install_git()
     install_bin()
     install_ssh()
+    install_vim()
 
 if __name__ == '__main__':
     main()

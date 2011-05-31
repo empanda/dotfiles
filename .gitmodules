@@ -122,6 +122,10 @@
 	path = vim/bundle/nagios
 	url = git://github.com/vim-scripts/nagios-syntax.git
 	ignore = untracked
+[submodule "vim/bundle/varnish"]
+	path = vim/bundle/varnish
+	url = git://github.com/empanda/vim-varnish.git
+	ignore = untracked
 [submodule "vim/bundle/pep8"]
 	path = vim/bundle/pep8
 	url = git://github.com/vim-scripts/pep8.git
