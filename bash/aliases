@@ -25,6 +25,7 @@ alias su="svn update"
 alias ssu="svn status -u"
 alias sa="svn add"
 alias sd="svn diff"
+alias sco="svn checkout"
 function sc { svn commit -m "$*"; }
 
 # Django Helpers
