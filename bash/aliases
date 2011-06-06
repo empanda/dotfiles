@@ -29,7 +29,10 @@ alias sco="svn checkout"
 function sc { svn commit -m "$*"; }
 
 # Django Helpers
+alias m="./manage.py"
 alias mr="./manage.py runserver"
+alias md="./manage.py dumpdata"
+alias ml="./manage.py loaddata"
 alias mt="./manage.py test"
 alias fdl="fab deploy_local"
 
