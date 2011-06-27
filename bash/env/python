@@ -1,0 +1,6 @@
+# Buildout cache
+export PYTHON_EGG_CACHE=$HOME/.buildout/cache
+
+# PIP cache
+export PIP_USE_MIRRORS=true
+export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
